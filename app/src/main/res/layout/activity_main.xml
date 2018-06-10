@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dcar.mynewapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Home page"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/HomeText"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Menu Page for my app"
+            android:textAlignment="textStart"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="47dp" />
+
+        <Button
+            android:id="@+id/buttonCalculator"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Calculator"
+            android:layout_below="@+id/HomeText"
+            android:textAlignment="textStart"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="47dp" />
+
+        <Button
+            android:id="@+id/buttonTicTacToe"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonCalculator"
+            android:text="Tic Tac Toe"
+            android:textAlignment="textStart"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="47dp" />
+
+        <Button
+            android:id="@+id/buttonMathPractice"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonTicTacToe"
+            android:text="Multiplication Practice"
+            android:textAlignment="textStart"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="47dp" />
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

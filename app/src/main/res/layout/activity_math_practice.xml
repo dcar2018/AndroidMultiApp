@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dcar.mynewapp.MathPracticeActivity">
+
+
+    <TextView
+        android:id="@+id/MathPracticeText"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Math Practice page"
+        android:textAlignment="textStart"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+
+    <TextView
+        android:id="@+id/tests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MathPracticeText"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="60dp"
+        android:gravity="right"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tests"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="40dp"
+        android:gravity="right"
+        android:hint="Answer"
+        android:inputType="none|number"
+        android:visibility="visible"
+        android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ans"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="25dp"
+        android:text="1" />
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn1"
+        android:layout_below="@+id/ans"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/btn1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn2"
+        android:layout_below="@+id/ans"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/btn2"
+        android:text="3" />
+
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/btn4"
+        android:text="5" />
+
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn3"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/btn5"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn4"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:text="7"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn7"
+        android:layout_below="@+id/btn5"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/btn7"
+        android:text="8"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn8"
+        android:layout_below="@+id/btn6"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/btn8"
+        android:text="9"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn7"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn0"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="25dp"
+        android:text="Check answer" />
+
+
+</RelativeLayout>
+
+
